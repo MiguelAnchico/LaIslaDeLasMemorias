@@ -6,6 +6,7 @@ using UnityEngine;
 
 public class Amb1Act1 : ExperienceController
 {
+    public GameObject TextFinal;
     public override void Start()
     {
         base.Start(); //llamada obligatoria al comenzar
@@ -34,6 +35,8 @@ public class Amb1Act1 : ExperienceController
         // Desactiva esta línea para evitar que se cambie la escena
         // EndExperience(); // llamada obligatoria al finalizar
         ActivarWorkSpace(); // Llama a un método que activa el WorkSpace
+        //Activar vibración
+        TextFinal.SetActive(true);
     }
 
     void ActivarWorkSpace()
